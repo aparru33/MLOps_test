@@ -26,4 +26,6 @@ jobs:
         pip install pytest
         export PYTHONPATH="$PWD/src"
     - name: Test with pytest
-      run: python -m pytest
+      run: 
+        export PYTHONPATH="$PWD/src"
+        python -m pytest
